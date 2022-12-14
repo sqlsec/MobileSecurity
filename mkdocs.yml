@@ -1,0 +1,70 @@
+site_name: 国光的移动安全学习记录
+site_url: https://mobile.sqlsec.com
+site_author: 国光
+site_description: "国光的移动安全学习记录"
+repo_name: sqlsec/MobileSecurity
+repo_url: https://github.com/sqlsec/MobileSecurity
+copyright: Copyright &copy;  国光
+theme:
+  name: material
+  custom_dir: overrides
+  font: false
+  language: zh
+  icon:
+    logo: fontawesome/brands/android
+    repo: fontawesome/brands/git-alt
+  favicon: https://image.3001.net/images/20200922/16007336487809.jpg
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - search.suggest
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: 切换浅色模式
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+      auto_title: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - toc:
+      permalink: true
+plugins:
+  - with-pdf:
+      author: 国光
+      cover_subtitle: iOS && Android Security
+      cover: true
+      back_cover: true
+      cover_logo: https://image.3001.net/images/20221213/16709229059580.png
+  - git-revision-date
+  - search:
+      prebuild_index: true
+      lang:
+        - en
+        - ja
+  - glightbox
+edit_uri: edit/main/docs/
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/redhat
+      link: https://www.sqlsec.com
+      name: 国光
+nav:
+  - "index.md"
+  - 准备工作:
+      - Hello World: "1/1.md"
